@@ -16,8 +16,11 @@ import (
 
 type dataQuery struct {
 	SensorMac  *string `json:"sensor_mac"`
-	SensorType *string `json:"sensor_type"`
-	ReceiveNo  *string `json:"receive_no"`
+	// SensorType *string `json:"sensor_type"`
+	// ReceiveNo  *string `json:"receive_no"`
+	GatherKey  *string `json:"gather_key"`
+	Channel    *string `json:"channel"`
+	ProjectId  *string `json:"project_id"`
 }
 
 type queryRequest struct {

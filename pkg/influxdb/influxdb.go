@@ -68,7 +68,7 @@ func (c *Connector) Query(script string, ctx context.Context) ([]*Point, error) 
 		var p = &Point{
 			Time:     result.Record().Time(),
 			Value:    nil,
-			FieldTag: result.Record().ValueByKey("sensor_type").(string),
+			FieldTag: result.Record().ValueByKey("gather_key").(string),
 		}
 		// .Format("2006-01-02 15:04:05")
 
